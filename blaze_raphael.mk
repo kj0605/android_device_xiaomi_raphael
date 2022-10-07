@@ -18,10 +18,11 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common ProjectBlaze stuff.
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# UDFPS animations
+# Blaze Stuffs
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := KaranJaiswal
+WITH_GAPPS := true
 EXTRA_UDFPS_ANIMATIONS := true
-
-# Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
